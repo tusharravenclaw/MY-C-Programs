@@ -1,0 +1,27 @@
+/* Conversion Of Distance */
+
+main()
+{
+float in_meters, in_feet, in_inches, in_centimeters; 
+int distance;
+
+printf("Input Distance in Km:\n");
+scanf("%d", &distance);
+
+in_meters = 1000*distance;
+in_feet = 3280.84*distance;
+in_inches = 39370*distance;
+in_centimeters = 100000*distance;
+
+printf("Distance in meters: ");
+printf("%f", in_meters);
+printf("\n");
+printf("Distance in feet: ");
+printf("%f", in_feet);
+printf("\n");
+printf("Distance in inches: ");
+printf("%f", in_inches);
+printf("\n");
+printf("Distance in centimeters: ");
+printf("%f", in_centimeters);
+}
