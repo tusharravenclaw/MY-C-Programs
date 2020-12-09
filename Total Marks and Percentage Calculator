@@ -1,0 +1,23 @@
+/*Total Marks and Percentage Calculator */
+main()
+{
+int en_marks, com_marks, elec_marks, chem_marks, work_marks, total_marks;
+float percentage;
+
+printf("English Marks: ");
+scanf("%d", &en_marks);
+printf("Computer Marks: ");
+scanf("%d", &com_marks);
+printf("Electrical Marks: ");
+scanf("%d", &elec_marks);
+printf("Chemistry Marks: ");
+scanf("%d", &chem_marks);
+printf("Workshop Marks: ");
+scanf("%d", &work_marks);
+
+total_marks = work_marks + chem_marks + elec_marks + en_marks;
+percentage = total_marks/5;
+
+printf("TOTAL MARKS: %d\n", total_marks);
+printf("PERCENTAGE: %f", percentage);
+}
