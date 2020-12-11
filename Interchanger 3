@@ -2,7 +2,7 @@
 
 main()
 {
-int c, d;
+int c, d, t;
 
 printf("ENTER C: ");
 scanf("%d", &c);
@@ -12,8 +12,9 @@ scanf("%d", &d);
 printf("C initial value = %d\n", c);
 printf("D initial value = %d\n", d);
 
-c = 0+d;
-d = 0+c;
+t = d;
+d = c;
+c = t;
 
 printf("C final value = %d\n", c);
 printf("D final value = %d\n", d);
