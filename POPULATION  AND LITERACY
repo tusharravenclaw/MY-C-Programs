@@ -1,0 +1,25 @@
+/* Population And Literacy */
+/* 
+per = Percentage
+lit = Literacy rate
+ilit = illiterate no.
+*/
+
+main() 
+{
+
+int per_men, lit_total, lit_men, ilit_men, ilit_total, ilit_women, pop;
+
+pop = 80000;
+lit_total = 48;
+ilit_total = (100 - lit_total)*pop/100;
+per_men = 52;
+lit_men = 35;  /*out of total*/
+
+ilit_men = (per_men - lit_men)*pop/100;
+ilit_women = ilit_total- ilit_men;
+
+printf("Illiterate Men: %d\n", ilit_men);
+printf("Illiterate Women: %d\n", ilit_women);
+
+}
