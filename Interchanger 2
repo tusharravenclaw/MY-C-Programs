@@ -1,0 +1,25 @@
+/* Interchanger 2*/
+
+main()
+{
+
+int c, d;
+
+printf("ENTER C: ");
+scanf("%d", &c);
+printf("ENTER D: ");
+scanf("%d", &d);
+
+printf("C initial value = %d\n", c);
+printf("D initial value = %d\n", d);
+
+c = c + d;
+d = c - d;
+c = c - d;
+d = (c+d)-c;
+
+
+printf("C final value = %d\n", c);
+printf("D final value = %d\n", d);
+
+}
