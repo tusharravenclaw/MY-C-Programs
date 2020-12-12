@@ -1,0 +1,16 @@
+//Digits Reversal and Square of Last Digit//
+
+main()
+{
+int num, a, b;
+
+printf("Enter a Five Digit Number: ");
+scanf("%d", &num);
+
+a = (num%10)*10000 + ((num/10)%10)*1000 +((num/100)%10)*100 +((num/1000)%10)*10 + ((num/10000)%10)*1;
+b = (num%10)*(num%10);
+
+printf("REVERSED DIGITS : %d\n", a);
+printf("SQUARED LAST DIGIT : %d\n", b);
+
+}
